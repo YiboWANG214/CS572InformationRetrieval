@@ -16,3 +16,9 @@ At last, we re-rank top 1000 documents on the expanded queries.
  
 Lucene RM3:
 At first, we use LMDirichletSimilarity to search for documents. Then we calculate P(t|q,R)_3 = (1 - lambda)*P(t|q,R)_MLE + lambda*P(t|q,R), normalize P(t|q,R)_3 and choose top 5 terms to expand queries. Then we re-rank top 1000 documents on the expanded queries.
+
+
+HW1.jar:
+java -jar HW1.jar BM25 indexpath querypath outputfile
+java -jar HW1.jar LMLaplace indexpath querypath outputfile
+java -jar HW1.jar RM3 indexpath querypath outputfile
